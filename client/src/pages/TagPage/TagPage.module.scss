@@ -1,0 +1,16 @@
+.image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.noLink{
+    text-decoration: none;
+    color: inherit;
+}
+.author{
+    margin-bottom: 10px;
+    color: grey;
+    font-style: italic;
+    font-size: 0.8rem;
+}
