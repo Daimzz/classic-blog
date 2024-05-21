@@ -22,6 +22,6 @@ const UserSchema = new mongoose.Schema(
   },
 );
 
-UserSchema.index({ createdAt: 1 }, { expireAfterSeconds: 86400 });
+UserSchema.index({ createdAt: 1 }, { expireAfterSeconds: 259200 });
 
 export default mongoose.model('User', UserSchema);

@@ -36,6 +36,6 @@ const PostSchema = new mongoose.Schema(
 		timestamps: true,
 	},
 );
-PostSchema.index({ createdAt: 1 }, { expireAfterSeconds: 86400 });
+PostSchema.index({ createdAt: 1 }, { expireAfterSeconds: 259200 });
 
 export default mongoose.model('Post', PostSchema);
