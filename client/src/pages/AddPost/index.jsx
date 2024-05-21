@@ -3,7 +3,6 @@ import TextField from '@mui/material/TextField';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import SimpleMDE from 'react-simplemde-editor';
-
 import 'easymde/dist/easymde.min.css';
 import styles from './AddPost.module.scss';
 import {useSelector} from "react-redux";
@@ -15,7 +14,7 @@ export const AddPost = () => {
 	const {id} = useParams()
 	const navigate = useNavigate()
 	const [imageUrl, setImageUrl] = useState('');
-	const [isLoading, setIsLoading] = useState(false);
+	const [_, setIsLoading] = useState(false);
 	const isAuth = useSelector(selectIsAuth)
 	const [text, setText] = useState('');
 	const [title, setTitle] = useState('');

@@ -10,4 +10,5 @@ const CommentSchema = new mongoose.Schema(
 	{ timestamps: true },
 );
 
+CommentSchema.index({ createdAt: 1 }, { expireAfterSeconds: 86400 });
 export default mongoose.model("Comment", CommentSchema);
